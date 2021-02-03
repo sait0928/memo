@@ -12,7 +12,7 @@ $nest = 0; // 計算の優先度を管理
 for ($i = 0; $i < $expLen; $i ++) {
 	$chr = $expression[$i];
 
-	if ($chr >= 0 && $chr <= 9) {
+	if ($chr >= '0' && $chr <= '9') {
 		$value[$opCnt] = 10 * $value[$opCnt] + (int)$chr;
 	}
 
